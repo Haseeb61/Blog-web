@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>About us</title>
+    <style>
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .content {
+            flex: 1 1 50%;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #022E1F;
+        }
+
+        .content p {
+            margin-bottom: 100px;
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .image {
+            flex: 1 1 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            background-color: black;
+        }
+        @media (max-width: 768px) {
+            .about-us {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content, .image {
+                flex: 1 1 100%;
+            }
+
+            .content h1 {
+                margin-left: -20px;
+                font-size: 2rem;
+            }
+
+            .content p {
+                margin-left: -20px;
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo-container">
+            <h1 class="site-title">LOGO</h1>
+        </div>
+        <ul class="menu-list" id="menu-list">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./blog-page.html">OUR BLOGS</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./contact.html">CONTACT US</a></li>
+        </ul>
+        <div class="h-button">
+            <button class="hb">Login / Register</button>
+        </div>
+        <div class="menu-icon">
+            <img class="menu-toggle-icon" src="./Images/menu.png" alt="Menu png" width="25px" onclick="toggleMenu()">
+        </div>
+    </nav>
+
+
+    <div class="about-content">
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Welcome to our blog, a hub where ideas come to life and stories inspire transformation. Our mission is to create meaningful connections through engaging content that resonates with your passions and curiosity.
+
+            At our core, we are driven by the desire to inform, inspire, and empower. Whether it's sharing practical tips, diving into thought-provoking discussions, or exploring the latest trends, we aim to provide value to every reader who visits our platform.
+            
+            Our team is dedicated to crafting content that reflects authenticity and excellence. We believe in the power of words to shape perspectives, foster understanding, and spark innovation. Every article, story, and guide is a step toward building a community that thrives on knowledge and creativity.
+            
+            Thank you for being part of our journey. Together, let’s explore, learn, and grow.</p>
+    </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="f-aboutus">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis, amet beatae quod assumenda corrupti veniam aspernatur voluptas architecto maxime illum accusamus similique est ea consectetur voluptates dolore suscipit tempore.</p>
+            <ul class="sci">
+    
+            </ul>
+        </div>
+        <div class="f-quicklinks">
+            <h2>Our Pages</h2>
+            <ul>
+                <li><a href="./index.html">Home Page</a></li>
+                <li><a href="./blog-page.html">Our Blogs</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="f-pricing">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="./blog-page.html">Travelling</a></li>
+                <li><a href="./blog-page.html">Educational</a></li>
+                <li><a href="./blog-page.html">Health and Care</a></li>
+                <li><a href="./blog-page.html">Technology</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-copyright">
+        <p>&copy; 2025 <a href="./index.html">Blogger.</a> All Rights Reserved.</p>
+    </div>
+
+</body>
+
+<script>
+    let menuList = document.getElementById("menu-list");
+    menuList.style.maxHeight = "0px";
+    
+    function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "400px";
+        } else {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    </script>
+
+</html>
